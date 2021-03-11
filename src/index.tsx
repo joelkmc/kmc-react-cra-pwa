@@ -1,5 +1,5 @@
 import { ExclamationCircleOutlined } from '@ant-design/icons';
-import { message, Modal } from 'antd';
+import { Modal } from 'antd';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
@@ -48,7 +48,7 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://cra.link/PWA
 serviceWorkerRegistration.register({
-  onSuccess: () => message.success('System successfully updated!'),
+  onSuccess: () => console.log('Success'),
   onUpdate: () => showUpdateConfirm(),
 });
 
