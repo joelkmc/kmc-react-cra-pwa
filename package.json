@@ -39,7 +39,6 @@
   "scripts": {
     "start": "yarn run build:css && craco start",
     "build": "NODE_ENV=production yarn run build:css && GENERATE_SOURCEMAP=false craco build",
-    "win:build": "NODE_ENV=production yarn run build:css && set \"GENERATE_SOURCEMAP=false\" && craco build",
     "build:css": "postcss src/styles/tailwind.css -o src/styles/main.css",
     "eject": "react-scripts eject"
   },
