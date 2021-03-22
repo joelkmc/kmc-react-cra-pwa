@@ -34,5 +34,28 @@
   svg {
     @apply align-baseline;
   }
+
+  .loader {
+    z-index: 2000 !important;
+  }
+
+  .animate {
+    animation: rotate 1s infinite;
+    z-index: -1;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+      opacity: 0.6;
+    }
+    70% {
+      transform: rotate(360deg);
+      opacity: 0.8;
+    }
+    100% {
+      transform: rotate(360deg);
+      opacity: 1;
+    }
+  }
   /*! purgecss end ignore */
 }

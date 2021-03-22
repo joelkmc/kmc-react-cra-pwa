@@ -9,7 +9,7 @@ import { updateServiceWorker } from './onupdate-service-worker';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import './styles/app.less';
-import './styles/main.css';
+import './styles/tailwind.css';
 
 const queryClient = new QueryClient({
   defaultOptions: {
